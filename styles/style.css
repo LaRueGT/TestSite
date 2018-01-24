@@ -1,0 +1,107 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+header {
+    border: 2px solid red;
+    height: 15%;
+}
+
+header h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+nav {
+    border: 2px solid purple;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+    background-color: purple;
+    font-size: 0
+}
+
+nav ul li {
+    display: inline-block;
+    color: green;
+    background-color: #dddddd;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li .active{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+nav ul li a{
+    background-color: pink;
+    color: white;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+footer {
+    border: 2px solid blue;
+    height: 5%;
+}
+
+footer p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+main {
+    border: 2px solid green;
+    display: flex;
+    height: 150%;
+}
+
+main h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+article {
+    margin: 0;
+    border: 2px solid orange;
+    flex: 3;
+}
+
+article p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+aside {
+    margin: 0;
+    border: 2px solid pink;
+    flex: 1;
+}
