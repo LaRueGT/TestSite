@@ -10,5 +10,3 @@ function stickyNavBar(){
 }
 
 window.addEventListener("scroll", stickyNavBar);
-
-
