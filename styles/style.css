@@ -6,13 +6,17 @@ html, body {
 }
 
 header {
+    margin: 0;
     background-color: red;
     height: 128px;
 }
 
+header h1{
+    margin: 0;
+}
+
 nav {
     height: 48px;
-    line-height: 48px;
 }
 
 .sticky{
@@ -29,21 +33,31 @@ nav ul {
 }
 
 nav ul li {
-    font-size: 15px;
+    font-size: 13px;
     display: inline-block;
     color: green;
     text-align: center;
 }
 
 nav ul li .active{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     background-color: #dddddd;
-    padding: 14px;
+    height: 48px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 nav ul li a{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     background-color: pink;
+    height: 48px;
     color: white;
-    padding: 14px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 nav ul li a:hover {
@@ -55,8 +69,8 @@ footer {
     height: 5%;
 }
 
-footer p {
-
+footer p{
+    margin: 0;
 }
 
 main {
