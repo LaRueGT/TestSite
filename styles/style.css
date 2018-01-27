@@ -27,6 +27,7 @@ nav {
     position: relative;
     z-index: 2;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    display: flex;
 }
 
 .sticky{
@@ -35,18 +36,55 @@ nav {
     width: 100%;
 }
 
-nav > ul {
-    width: 100%;
+.book-indicator {
+    background-color: greenyellow;
+    margin: 0;
+    width: 25%;
+    border: 3px solid;
+}
+
+.drop-menu {
+    width: 25%;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    position: absolute;
+    top: 48px;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: indianred;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.active-book {
+    background-color: antiquewhite;
+}
+
+.drop-menu li {
+    border: 2px solid white;
+    height: 48px;
+    display: flex;
+    align-items: center;
+
+}
+
+.drop-menu li a {
+    text-decoration: none;
+    flex-grow: 1;
+}
+
+.tabs {
+    width: 75%;
     height: 48px;
     margin: 0;
-    list-style: none;
     padding-left: 0;
-    text-transform: uppercase;
+    list-style: none;
     display: flex;
     align-items: stretch;
 }
 
-nav ul li {
+.tabs li {
     background-color: aqua;
     display: flex;
     align-items: stretch;
@@ -54,26 +92,21 @@ nav ul li {
     flex-grow: 1;
 }
 
-nav ul li a {
+.tabs li a {
     display: flex;
     flex-grow: 1;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
 }
 
-nav ul li.active {
-    background-color: #dddddd;
-    border-bottom: 4px solid goldenrod;
-}
-
-nav ul li.active:hover {
-    background-color: #dddddd;
-    border-bottom: 4px solid goldenrod;
-}
-
-nav ul li:hover {
+.tabs li:hover {
     background-color: brown;
     color: purple;
+}
+
+.active-tab {
+    border-bottom: 2px solid orangered;
 }
 
 footer {
